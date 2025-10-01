@@ -1,4 +1,4 @@
-# gym-super-mario-bros
+# gymnasium-super-mario-bros
 
 [![BuildStatus][build-status]][ci-server]
 [![PackageVersion][pypi-version]][pypi-home]
@@ -7,14 +7,14 @@
 [![Format][pypi-format]][pypi-home]
 [![License][pypi-license]](LICENSE)
 
-[build-status]: https://app.travis-ci.com/Kautenja/gym-super-mario-bros.svg?branch=master
-[ci-server]: https://app.travis-ci.com/Kautenja/gym-super-mario-bros
-[pypi-version]: https://badge.fury.io/py/gym-super-mario-bros.svg
-[pypi-license]: https://img.shields.io/pypi/l/gym-super-mario-bros.svg
-[pypi-status]: https://img.shields.io/pypi/status/gym-super-mario-bros.svg
-[pypi-format]: https://img.shields.io/pypi/format/gym-super-mario-bros.svg
-[pypi-home]: https://badge.fury.io/py/gym-super-mario-bros
-[python-version]: https://img.shields.io/pypi/pyversions/gym-super-mario-bros.svg
+[build-status]: https://app.travis-ci.com/sajmon83/gymnasium-super-mario-bros.svg?branch=master
+[ci-server]: https://app.travis-ci.com/sajmon83/gymnasium-super-mario-bros
+[pypi-version]: https://badge.fury.io/py/gymnasium-super-mario-bros.svg
+[pypi-license]: https://img.shields.io/pypi/l/gymnasium-super-mario-bros.svg
+[pypi-status]: https://img.shields.io/pypi/status/gymnasium-super-mario-bros.svg
+[pypi-format]: https://img.shields.io/pypi/format/gymnasium-super-mario-bros.svg
+[pypi-home]: https://badge.fury.io/py/gymnasium-super-mario-bros
+[python-version]: https://img.shields.io/pypi/pyversions/gymnasium-super-mario-bros.svg
 [python-home]: https://python.org
 
 ![Mario](https://user-images.githubusercontent.com/2184469/40949613-7542733a-6834-11e8-895b-ce1cc3af9dbb.gif)
