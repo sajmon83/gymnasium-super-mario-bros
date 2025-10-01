@@ -3,7 +3,7 @@
 [![Version][version]]()
 [![PythonVersion][python-version]]()
 
-[version]: https://img.shields.io/badge/Version-v9.0.0-green.svg
+[version]: https://img.shields.io/badge/Version-v8.0.0-green.svg
 [python-version]: https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg
 
 
