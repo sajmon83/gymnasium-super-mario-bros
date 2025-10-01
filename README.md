@@ -1,21 +1,11 @@
 # gymnasium-super-mario-bros
 
-[![BuildStatus][build-status]][ci-server]
-[![PackageVersion][pypi-version]][pypi-home]
-[![PythonVersion][python-version]][python-home]
-[![Stable][pypi-status]][pypi-home]
-[![Format][pypi-format]][pypi-home]
-[![License][pypi-license]](LICENSE)
+[![Version][version]]()
+[![PythonVersion][python-version]]()
 
-[build-status]: https://app.travis-ci.com/sajmon83/gymnasium-super-mario-bros.svg?branch=master
-[ci-server]: https://app.travis-ci.com/sajmon83/gymnasium-super-mario-bros
-[pypi-version]: https://img.shields.io/badge/pypi%20package-9.0.0-green.svg
-[pypi-license]: https://img.shields.io/pypi/l/gymnasium-super-mario-bros.svg
-[pypi-status]: https://img.shields.io/pypi/status/gymnasium-super-mario-bros.svg
-[pypi-format]: https://img.shields.io/pypi/format/gymnasium-super-mario-bros.svg
-[pypi-home]: https://badge.fury.io/py/gymnasium-super-mario-bros
+[version]: https://img.shields.io/badge/Version-v9.0.0-green.svg
 [python-version]: https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg
-[python-home]: https://python.org
+
 
 ![Mario](https://user-images.githubusercontent.com/2184469/40949613-7542733a-6834-11e8-895b-ce1cc3af9dbb.gif)
 
