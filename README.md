@@ -19,10 +19,10 @@
 
 ![Mario](https://user-images.githubusercontent.com/2184469/40949613-7542733a-6834-11e8-895b-ce1cc3af9dbb.gif)
 
-An [OpenAI Gym](https://github.com/openai/gym) environment for
+An gymnasium environment for
 Super Mario Bros. & Super Mario Bros. 2 (Lost Levels) on The Nintendo
 Entertainment System (NES) using
-[the nes-py emulator](https://github.com/Kautenja/nes-py).
+[the nes-py emulator fork v9.0.0](https://github.com/sajmon83/nes-py).
 
 ## Installation
 
