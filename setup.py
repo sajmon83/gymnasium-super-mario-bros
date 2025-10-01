@@ -9,12 +9,12 @@ with open('README.md') as README_md:
 
 setup(
     name='gym_super_mario_bros',
-    version='7.4.0',
-    description='Super Mario Bros. for OpenAI Gym',
+    version='8.0.0',
+    description='Super Mario Bros. for Gymnasium',
     long_description=README,
     long_description_content_type='text/markdown',
     keywords=' '.join([
-        'OpenAI-Gym',
+        'Gymnasium',
         'NES',
         'Super-Mario-Bros',
         'Lost-Levels',
@@ -29,10 +29,11 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Operating System :: Microsoft :: Windows',
         'Programming Language :: Python :: 3 :: Only',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
         'Topic :: Games/Entertainment :: Side-Scrolling/Arcade Games',
         'Topic :: Scientific/Engineering :: Artificial Intelligence',
     ],
@@ -42,7 +43,7 @@ setup(
     license='Proprietary',
     packages=find_packages(exclude=['tests', '*.tests', '*.tests.*']),
     package_data={ 'gym_super_mario_bros': ['_roms/*.nes'] },
-    install_requires=['nes-py>=8.1.4'],
+    install_requires=['nes-py>=9.0.0'],
     entry_points={
         'console_scripts': [
             'gym_super_mario_bros = gym_super_mario_bros._app.cli:main',

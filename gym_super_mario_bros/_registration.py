@@ -1,10 +1,10 @@
-"""Registration code of Gym environments in this package."""
-import gym
+"""Registration code of Gymnasium environments in this package."""
+import gymnasium as gym
 
 
 def _register_mario_env(id, is_random=False, **kwargs):
     """
-    Register a Super Mario Bros. (1/2) environment with OpenAI Gym.
+    Register a Super Mario Bros. (1/2) environment with Gymnasium.
 
     Args:
         id (str): id for the env to register
@@ -54,7 +54,7 @@ _register_mario_env('SuperMarioBros2-v1', lost_levels=True, rom_mode='downsample
 
 def _register_mario_stage_env(id, **kwargs):
     """
-    Register a Super Mario Bros. (1/2) stage environment with OpenAI Gym.
+    Register a Super Mario Bros. (1/2) stage environment with Gymnasium.
 
     Args:
         id (str): id for the env to register

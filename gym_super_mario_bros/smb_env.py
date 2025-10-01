@@ -139,15 +139,13 @@ class SuperMarioBrosEnv(NESEnv):
     def _x_position(self):
         """Return the current horizontal position."""
         # add the current page 0x6d to the current x
-        return self.ram[0x6d] * 0x100 + self.ram[0x86]
+        return int(self.ram[0x6d]) * 0x100 + int(self.ram[0x86])
 
     @property
     def _left_x_position(self):
         """Return the number of pixels from the left of the screen."""
-        # TODO: resolve RuntimeWarning: overflow encountered in ubyte_scalars
         # subtract the left x position 0x071c from the current x 0x86
-        # return (self.ram[0x86] - self.ram[0x071c]) % 256
-        return np.uint8(int(self.ram[0x86]) - int(self.ram[0x071c])) % 256
+        return (int(self.ram[0x86]) - int(self.ram[0x071c])) % 256
 
     @property
     def _y_pixel(self):

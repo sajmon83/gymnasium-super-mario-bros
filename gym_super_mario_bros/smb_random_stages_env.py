@@ -1,5 +1,5 @@
-"""An OpenAI Gym Super Mario Bros. environment that randomly selects levels."""
-import gym
+"""A Gymnasium Super Mario Bros. environment that randomly selects levels."""
+import gymnasium as gym
 import numpy as np
 from .smb_env import SuperMarioBrosEnv
 
@@ -79,7 +79,7 @@ class SuperMarioBrosRandomStagesEnv(gym.Env):
         # return the list of seeds used by RNG(s) in the environment
         return [seed]
 
-    def reset(self, seed=None, options=None, return_info=None):
+    def reset(self, seed=None, options=None):
         """
         Reset the state of the environment and returns an initial observation.
 
@@ -88,14 +88,14 @@ class SuperMarioBrosRandomStagesEnv(gym.Env):
             options (dict): An optional options for resetting the environment.
                 Can include the key 'stages' to override the random set of
                 stages to sample from.
-            return_info (any): unused
 
         Returns:
-            state (np.ndarray): next frame as a result of the given action
+            tuple: (observation, info) - observation as np.ndarray and info dict
 
         """
         # Seed the RNG for this environment.
-        self.seed(seed)
+        if seed is not None:
+            self.seed(seed)
         # Get the collection of stages to sample from
         stages = self.stages
         if options is not None and 'stages' in options:
@@ -112,11 +112,7 @@ class SuperMarioBrosRandomStagesEnv(gym.Env):
         # Set the environment based on the world and stage.
         self.env = self.envs[world][stage]
         # reset the environment
-        return self.env.reset(
-            seed=seed,
-            options=options,
-            return_info=return_info
-        )
+        return self.env.reset(seed=seed, options=options)
 
     def step(self, action):
         """
@@ -129,7 +125,8 @@ class SuperMarioBrosRandomStagesEnv(gym.Env):
             a tuple of:
             - state (np.ndarray): next frame as a result of the given action
             - reward (float) : amount of reward returned after given action
-            - done (boolean): whether the episode has ended
+            - terminated (boolean): whether the episode has ended
+            - truncated (boolean): whether the episode was truncated
             - info (dict): contains auxiliary diagnostic information
 
         """
